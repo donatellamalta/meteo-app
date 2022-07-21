@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Webmanifest -->
+    <link rel="manifest" href="site.webmanifest">
     <!-- Icon -->
+    <link rel="icon" href="images/icon.png">
 
-    <title>Meteo</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
 
+    <title>Weather</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <!-- Heading -->
+        <header>
+            <img src="images/logo.png" alt="Coding Week Logo" />
+        </header>
+
+        <!-- principal content -->
+        <main>
+            <!-- Weather information -->
+            <div class="weather-info">
+                <!-- Weather icon -->
+                <img class="weather-icon" src="images/04d.png" alt="Weather icon" />
+
+                <!-- Location -->
+                <div class="weather-location">Localizing your position...</div>
+
+                <!-- Temperature -->
+                <div class="weather-temperature"></div>
+            </div>
+
+            <!-- Suggestions panel -->
+            <div class="panel">
+                <h4>Suggestion</h4>
+                <p class="suggestion">Bring the umbrella!</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- JS logic -->
+    <script src="script.js"></script>
 </body>
+
 </html>
